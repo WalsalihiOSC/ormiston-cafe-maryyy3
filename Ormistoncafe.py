@@ -95,7 +95,8 @@ class CafeMenu():
         count = 0
         count += 1
 
-            
+#define functions section
+         
 #define forward button
     def forward(self):
         self.w1.destroy()
@@ -190,8 +191,8 @@ class CafeMenu2():
         self.button2 = Button(self.w1, text = "Reset", bg = "#FFFFFF", fg = "#000000", font = tkinter.font.Font(family = "MS Shell Dlg 2", size = 8), cursor = "arrow", state = "normal")
         self.button2.place(x = 30, y = 280, width = 90, height = 22)
         self.button2['command'] = self.reset
-
-
+        
+#define functions
     def backward(self):
         self.w1.destroy()
         a = Orderpage(0)
@@ -232,6 +233,11 @@ class Orderpage():
         self.image2.place(x = -10, y = 70, width = 720, height = 280)
         self.label3 = Label(self.w1, text = "Order details", fg = "#040404", bg = "#FFFFFF", font = tkinter.font.Font(family = "Script MT Bold", size = 22, weight = "normal"), cursor = "arrow", state = "normal")
         self.label3.place(x = 255, y = 20, width = 160, height = 42)
+
+#class for prices
+class PriceCalc():
+    def __init__(self,parent):
+        
 
         
 
